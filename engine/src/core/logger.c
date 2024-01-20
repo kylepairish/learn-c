@@ -30,6 +30,6 @@ KAPI void log_output(log_level level, const char* message, ...) {
     sprintf(out_message2, "%s%s\n", level_strings[level], out_message);
 
     // TODO: platform-specific output.
-    printf("%s\n", out_message2);
+    printf("%s", out_message2);
 
 }
